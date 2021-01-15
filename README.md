@@ -34,6 +34,10 @@ OFF: At least one Ethernet cable is OFF
 ![](https://i.imgur.com/m79zxtZ.png)   
 **OFF**   
 ![](https://i.imgur.com/9fTobEk.png)   
+### Preparing the training and validation datasets   
+1. Split the images into training and validation datasets and create the corresponding text files using createTextFiles.py   
+2. Resize the images into 227x227 and create the LMDB files using convert_txt_to_lmdb.sh   
+3. Input the location of training and validation LMDB files in the train_val.prototxt to train the model   
 
 ## Training   
 Train the fine-tuned Squeezenet model on the dataset using two GPUs   
