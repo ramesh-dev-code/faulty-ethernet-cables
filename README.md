@@ -57,13 +57,13 @@ Building the optimized inference engine for the Intel VPU
 python3 /opt/intel/openvino/deployment_tools/model_optimizer/mo.py --framework caffe --data_type FP16 --input_shape [1,3,227,227] --input data --mean_values data[104.0,117.0,123.0] --output prob --input_model train_cp_iter_50000.caffemodel --input_proto ./FP16/deploy.prototxt --output_dir ./FP16/
 ```
 ## Testing on Edge Node      
-Image Classification on CPU  
+### Image Classification on CPU  
 ```
 /home/puzzle/Documents/CheckPoint/Classification/ImageClassification/image_classification_sync -d CPU -m /home/puzzle/Documents/CheckPoint/Classification/FP32/train_cp_iter_50000.xml -i /home/puzzle/Documents/CheckPoint/Classification/test_input.jpg
 ```
 ![](https://i.imgur.com/qEUtZLf.png)   
 Inference Time: ~3 ms   
-Image Classification on VPU  
+### Image Classification on VPU  
 ```
 /home/puzzle/Documents/CheckPoint/Classification/ImageClassification/image_classification_sync -d MYRIAD -m /home/puzzle/Documents/CheckPoint/Classification/FP16/train_cp_iter_50000.xml -i /home/puzzle/Documents/CheckPoint/Classification/test_input.jpg
 ```
