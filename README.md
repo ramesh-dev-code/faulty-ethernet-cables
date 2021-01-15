@@ -1,6 +1,6 @@
 # Deep Learning-based Image Classification of Faulty Ethernet Cables    
 ## Objectives   
-1. To train the Squeezenet model on the Ethernet cables images to classify the status of Ethernet cables on the device under test   
+1. To train the [Squeezenet model](https://github.com/forresti/SqueezeNet/tree/master/SqueezeNet_v1.0) on the Ethernet cables images to classify the status of Ethernet cables on the device under test   
 2. To create the hardware-optimized inference engine with the trained model using the Intel OpenVINO toolkit for the Intel CPU and Intel-Movidius VPU      
 3. To develop the Python/OpenCV-based application to classify the real-time status of Ethernet cables in the webcam images   
 
