@@ -70,13 +70,13 @@ Image Classification on VPU
 ![](https://i.imgur.com/qtaihZl.png)   
 Inference Time: ~15 ms   
 
-### Real-time Image Classification on the web cam video on CPU   
+### Real-time Image Classification on the webcam video on CPU   
 ```
 /home/puzzle/Documents/CheckPoint/Classification/VideoClassification/video_classification_async -d CPU -m /home/puzzle/Documents/CheckPoint/Classification/FP32/train_cp_iter_50000.xml -i /dev/video0
 ```
 ![](https://i.imgur.com/1Wk7edZ.png)   
 
-### Real-time Image Classification on the web cam video on VPU   
+### Real-time Image Classification on the webcam video on VPU   
 ```
 /home/puzzle/Documents/CheckPoint/Classification/VideoClassification/video_classification_async -d MYRIAD -m /home/puzzle/Documents/CheckPoint/Classification/FP16/train_cp_iter_50000.xml -i /dev/video0
 ```
